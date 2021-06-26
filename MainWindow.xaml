@@ -1,0 +1,24 @@
+﻿<Window x:Class="TestTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid>
+		<ComboBox x:Name="citySelected" HorizontalAlignment="Left" Margin="104,41,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" ItemsSource="{Binding Cities}" SelectionChanged="citySelectionChanged"/>
+		<ComboBox x:Name="daySelected" HorizontalAlignment="Left" Margin="287,41,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Days}" SelectedIndex="0" SelectionChanged="daySelectionChanged" />
+		<Label Content="Погода:" HorizontalAlignment="Left" Margin="104,109,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="mainLabel" Content="" HorizontalAlignment="Left" Margin="151,109,0,0" VerticalAlignment="Top"/>
+		<Label Content="Температура:" HorizontalAlignment="Left" Margin="73,128,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="temperatureLabel" Content="" HorizontalAlignment="Left" Margin="151,128,0,0" VerticalAlignment="Top"/>
+		<Label Content="Вологість:" HorizontalAlignment="Left" Margin="92,149,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="humidityLabel" Content="" HorizontalAlignment="Left" Margin="151,149,0,0" VerticalAlignment="Top"/>
+		<Label Content="Тиск:" HorizontalAlignment="Left" Margin="119,168,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="pressureLabel" Content="" HorizontalAlignment="Left" Margin="151,168,0,0" VerticalAlignment="Top"/>
+		<Label Content="Швидкість вітру:" HorizontalAlignment="Left" Margin="57,186,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="windLabel" Content="" HorizontalAlignment="Left" Margin="151,186,0,0" VerticalAlignment="Top"/>
+
+	</Grid>
+</Window>
